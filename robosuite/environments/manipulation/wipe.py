@@ -426,8 +426,8 @@ class Wipe(SingleArmEnv):
                 # Add this marker the wiped list
                 self.wiped_markers.append(new_active_marker)
                 # Add reward if we're using the dense reward
-                if self.reward_shaping:
-                    reward += self.unit_wiped_reward
+                #if self.reward_shaping:
+                reward += self.unit_wiped_reward
 
             # Additional reward components if using dense rewards
             if self.reward_shaping:
